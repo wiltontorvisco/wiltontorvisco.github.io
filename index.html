@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Consultor & Instructor Tech</title>
+    <style>
+        /* ESTILOS CSS (Diseño Limpio y Profesional) */
+        :root {
+            --primary: #2c3e50; /* Azul oscuro profesional */
+            --accent: #e74c3c;  /* Rojo para llamadas a la acción */
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        
+        /* Navegación */
+        header { background: var(--primary); color: white; padding: 1rem 0; }
+        nav { display: flex; justify-content: space-between; max-width: 1100px; margin: auto; padding: 0 20px; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        
+        /* Hero Section */
+        .hero { background: var(--light); text-align: center; padding: 4rem 20px; }
+        .btn { background: var(--accent); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        
+        /* Contenedores */
+        .container { max-width: 1100px; margin: auto; padding: 2rem 20px; }
+        
+        /* Grillas para Blog y Productos */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); }
+        
+        /* Sección Videos */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 15px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem 0; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div style="font-size: 1.5rem;">NOMBRE<b>BRAND</b></div>
+            <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#premium" style="color: #f1c40f;">Zona VIP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Domina Python y el Desarrollo Web</h1>
+        <p>Tutoriales directos al grano, código limpio y estrategias de carrera.</p>
+        <br>
+        <a href="#recursos" class="btn">Empezar con Material Gratuito</a>
+    </section>
+
+    <div class="container">
+        
+        <h2 id="blog">📰 Últimos Artículos</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Cómo estructurar un proyecto en Python</h3>
+                <p>Aprende las mejores prácticas para organizar tus carpetas y módulos...</p>
+                <a href="#">Leer más &rarr;</a>
+            </article>
+            <article class="card">
+                <h3>HTML5 Semántico explicado</h3>
+                <p>Por qué usar 'div' para todo es una mala idea en 2024...</p>
+                <a href="#">Leer más &rarr;</a>
+            </article>
+        </div>
+
+        <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #eee;">
+
+        <h2 id="videos">🎥 En mi canal de YouTube</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Tutorial: Tu primer Bot de Python</h3>
+            </div>
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Consejos para Programadores Junior</h3>
+            </div>
+        </div>
+
+        <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #eee;">
+
+        <h2 id="recursos">🚀 Materiales de Estudio</h2>
+        <div class="grid">
+            
+            <div class="card" style="border-left: 5px solid #2ecc71;">
+                <h3>Cheat Sheet Python (PDF)</h3>
+                <p><b>Gratis</b>. Resumen de sintaxis básica y estructuras de datos.</p>
+                <button onclick="alert('Aquí iría el enlace a tu PDF')">Descargar</button>
+            </div>
+
+            <div class="card" id="premium" style="border-left: 5px solid #f1c40f; background-color: #fffcf0;">
+                <h3>Curso: Python para Automatización</h3>
+                <p><b>$15.00 USD</b>. 4 horas de video + Código fuente + Soporte.</p>
+                <a href="https://gumroad.com/" target="_blank" class="btn">Comprar Acceso</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Enseñando código con pasión.</p>
+        <p><small>Desarrollado con HTML5 y hosteado en GitHub Pages.</small></p>
+    </footer>
+
+</body>
+</html>
